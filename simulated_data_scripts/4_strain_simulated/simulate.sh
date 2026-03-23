@@ -2,13 +2,13 @@
 set -euo pipefail
 
 # -------- Configuration --------
-input_csv="./4-strain_simulated_ratios.csv"
+input_csv="4-strain_simulated_ratios.csv"
 coverages=(10 20 50)
 read_length=250
 fragment_mean=600
 fragment_std=150
 profile="MSv3"
-genome_folder="./genomes"
+genome_folder="genomes"
 output_folder="fastq"
 art_bin="path/to/art_illumina"   # Please change this to the actual path of your ART Illumina binary
 
