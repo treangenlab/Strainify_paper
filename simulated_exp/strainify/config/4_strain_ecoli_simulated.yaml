@@ -1,0 +1,7 @@
+genome_folder: ../Strainify_paper/simulated_exp/4_strain_simulated/genomes
+output_dir: ../Strainify_paper/simulated_exp/strainify/results
+fastq_folder: ../Strainify_paper/simulated_exp/4_strain_simulated/fastq
+read_type: paired
+modify_windows: --window_size 500 --window_overlap 0
+weight_by_entropy: false
+use_precomputed_variants: false
