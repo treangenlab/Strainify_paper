@@ -1,0 +1,8 @@
+genome_folder: ../Strainify_paper/B_ovatus/all_fastas
+output_dir: ../Strainify_paper/B_ovatus/results
+fastq_folder: ../Strainify_paper/B_ovatus/fastqs
+read_type: paired
+modify_windows: --window_size 500 --window_overlap 0
+weight_by_entropy: true
+use_precomputed_variants: false
+parsnp_flags: --skip-ani-filter
