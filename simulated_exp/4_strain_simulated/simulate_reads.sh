@@ -3,7 +3,7 @@ set -euo pipefail
 
 # -------- Configuration --------
 input_csv="4-strain_simulated_ratios.csv"
-coverages=(10 20 50)
+coverages=(1 2 5 10 20 50)
 read_length=250
 fragment_mean=600
 fragment_std=150

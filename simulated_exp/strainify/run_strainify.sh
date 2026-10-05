@@ -1,18 +1,67 @@
 # !/bin/bash
 
 # 4-strain simulated dataset (not weighted)
-./strainify run --cores 12 --configfile ../Strainify_paper/simulated_exp/strainify/config/4_strain_ecoli_simulated.yaml
+./strainify \
+    --genome_folder ../Strainify_paper/simulated_exp/4_strain_simulated/genomes \
+    --fastq_folder ../Strainify_paper/simulated_exp/4_strain_simulated/fastq \
+    --outdir ../Strainify_paper/simulated_exp/strainify/results \
+    --max_cpus 12
 
 # 30-strain simulated dataset (not weighted)
-./strainify run --cores 12 --configfile ../Strainify_paper/simulated_exp/strainify/config/30_strain_simulated_cdiff.yaml
-./strainify run --cores 12 --configfile ../Strainify_paper/simulated_exp/strainify/config/30_strain_simulated_ecoli.yaml
-./strainify run --cores 12 --configfile ../Strainify_paper/simulated_exp/strainify/config/30_strain_simulated_mtuberculosis.yaml
-./strainify run --cores 12 --configfile ../Strainify_paper/simulated_exp/strainify/config/30_strain_simulated_sepidermidis.yaml
-./strainify run --cores 12 --configfile ../Strainify_paper/simulated_exp/strainify/config/30_strain_simulated_cacnes.yaml
+./strainify \
+    --genome_folder ../Strainify_paper/simulated_exp/30_strain_simulated/cacnes/cacnes_downloads \
+    --fastq_folder ../Strainify_paper/simulated_exp/30_strain_simulated/cacnes/fastq \
+    --outdir ../Strainify_paper/simulated_exp/strainify/30_strain_simulated/cacnes/not_weighted \
+    --max_cpus 12
+./strainify \
+    --genome_folder ../Strainify_paper/simulated_exp/30_strain_simulated/cdiff/cdiff_downloads \
+    --fastq_folder ../Strainify_paper/simulated_exp/30_strain_simulated/cdiff/fastq \
+    --outdir ../Strainify_paper/simulated_exp/strainify/30_strain_simulated/cdiff/not_weighted \
+    --max_cpus 12
+./strainify \
+    --genome_folder ../Strainify_paper/simulated_exp/30_strain_simulated/ecoli/ecoli_downloads \
+    --fastq_folder ../Strainify_paper/simulated_exp/30_strain_simulated/ecoli/fastq \
+    --outdir ../Strainify_paper/simulated_exp/strainify/30_strain_simulated/ecoli/not_weighted \
+    --max_cpus 12
+./strainify \
+    --genome_folder ../Strainify_paper/simulated_exp/30_strain_simulated/mtuberculosis/mtuberculosis_downloads \
+    --fastq_folder ../Strainify_paper/simulated_exp/30_strain_simulated/mtuberculosis/fastq \
+    --outdir ../Strainify_paper/simulated_exp/strainify/30_strain_simulated/mtuberculosis/not_weighted \
+    --max_cpus 12
+./strainify \
+    --genome_folder ../Strainify_paper/simulated_exp/30_strain_simulated/sepidermidis/sepidermidis_downloads \
+    --fastq_folder ../Strainify_paper/simulated_exp/30_strain_simulated/sepidermidis/fastq \
+    --outdir ../Strainify_paper/simulated_exp/strainify/30_strain_simulated/sepidermidis/not_weighted \
+    --max_cpus 12
 
 # 30-strain simulated dataset (weighted)
-./strainify run --cores 12 --configfile ../Strainify_paper/simulated_exp/strainify/config/30_strain_simulated_cdiff.yaml --config weight_by_entropy=true output_dir=../Strainify_paper/simulated_exp/strainify/30_strain_simulated/cdiff/weighted
-./strainify run --cores 12 --configfile ../Strainify_paper/simulated_exp/strainify/config/30_strain_simulated_ecoli.yaml --config weight_by_entropy=true output_dir=../Strainify_paper/simulated_exp/strainify/30_strain_simulated/ecoli/weighted
-./strainify run --cores 12 --configfile ../Strainify_paper/simulated_exp/strainify/config/30_strain_simulated_mtuberculosis.yaml --config weight_by_entropy=true output_dir=../Strainify_paper/simulated_exp/strainify/30_strain_simulated/mtuberculosis/weighted
-./strainify run --cores 12 --configfile ../Strainify_paper/simulated_exp/strainify/config/30_strain_simulated_sepidermidis.yaml --config weight_by_entropy=true output_dir=../Strainify_paper/simulated_exp/strainify/30_strain_simulated/sepidermidis/weighted
-./strainify run --cores 12 --configfile ../Strainify_paper/simulated_exp/strainify/config/30_strain_simulated_cacnes.yaml --config weight_by_entropy=true output_dir=../Strainify_paper/simulated_exp/strainify/30_strain_simulated/cacnes/weighted
+./strainify \
+    --genome_folder ../Strainify_paper/simulated_exp/30_strain_simulated/cacnes/cacnes_downloads \
+    --fastq_folder ../Strainify_paper/simulated_exp/30_strain_simulated/cacnes/fastq \
+    --outdir ../Strainify_paper/simulated_exp/strainify/30_strain_simulated/cacnes/weighted \
+    --weight_by_entropy \
+    --max_cpus 12
+./strainify \
+    --genome_folder ../Strainify_paper/simulated_exp/30_strain_simulated/cdiff/cdiff_downloads \
+    --fastq_folder ../Strainify_paper/simulated_exp/30_strain_simulated/cdiff/fastq \
+    --outdir ../Strainify_paper/simulated_exp/strainify/30_strain_simulated/cdiff/weighted \
+    --weight_by_entropy \
+    --max_cpus 12
+./strainify \
+    --genome_folder ../Strainify_paper/simulated_exp/30_strain_simulated/ecoli/ecoli_downloads \
+    --fastq_folder ../Strainify_paper/simulated_exp/30_strain_simulated/ecoli/fastq \
+    --outdir ../Strainify_paper/simulated_exp/strainify/30_strain_simulated/ecoli/weighted \
+    --weight_by_entropy \
+    --max_cpus 12
+./strainify \
+    --genome_folder ../Strainify_paper/simulated_exp/30_strain_simulated/mtuberculosis/mtuberculosis_downloads \
+    --fastq_folder ../Strainify_paper/simulated_exp/30_strain_simulated/mtuberculosis/fastq \
+    --outdir ../Strainify_paper/simulated_exp/strainify/30_strain_simulated/mtuberculosis/weighted \
+    --weight_by_entropy \
+    --max_cpus 12
+./strainify \
+    --genome_folder ../Strainify_paper/simulated_exp/30_strain_simulated/sepidermidis/sepidermidis_downloads \
+    --fastq_folder ../Strainify_paper/simulated_exp/30_strain_simulated/sepidermidis/fastq \
+    --outdir ../Strainify_paper/simulated_exp/strainify/30_strain_simulated/sepidermidis/weighted \
+    --weight_by_entropy \
+    --max_cpus 12

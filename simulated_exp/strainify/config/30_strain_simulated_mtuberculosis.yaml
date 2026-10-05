@@ -1,7 +1,0 @@
-genome_folder: ../Strainify_paper/simulated_exp/30_strain_simulated/mtuberculosis/mtuberculosis_downloads
-output_dir: ../Strainify_paper/simulated_exp/strainify/30_strain_simulated/mtuberculosis/not_weighted
-fastq_folder: ../Strainify_paper/simulated_exp/30_strain_simulated/mtuberculosis/fastq
-read_type: paired
-modify_windows: --window_size 500 --window_overlap 0
-weight_by_entropy: false
-use_precomputed_variants: false

@@ -1,0 +1,5 @@
+genome_ID	strain_taxid	species_taxid	organism_name	id
+E24377A	562.1	562	Escherichia coli	/home/Users/rl152/Strainify/4-strain-mock-exp/genomes/E24377A.fna
+H10407	562.2	562	Escherichia coli	/home/Users/rl152/Strainify/4-strain-mock-exp/genomes/H10407.fna
+Sakai	562.3	562	Escherichia coli	/home/Users/rl152/Strainify/4-strain-mock-exp/genomes/Sakai.fna
+UTI89	562.4	562	Escherichia coli	/home/Users/rl152/Strainify/4-strain-mock-exp/genomes/UTI89.fna
